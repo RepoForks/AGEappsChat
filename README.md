@@ -1,5 +1,5 @@
 # AGEappsChat
-App with of Collapsing Toolbar use.
+App with an example of Collapsing Toolbar use.
 
 - Custom Recyclerviws
 - Custom Adapters in RecyclerViews
