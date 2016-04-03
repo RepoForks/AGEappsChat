@@ -1,5 +1,5 @@
 # AGEappsChat
-App with an example of Collapsing Toolbar use.
+App with an example of Collapsing Toolbar use, it is based on WhatsApp interface.
 
 - Custom Recyclerviws
 - Custom Adapters in RecyclerViews
