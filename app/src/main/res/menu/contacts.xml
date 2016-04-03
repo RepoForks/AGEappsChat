@@ -3,7 +3,7 @@
     <item
         android:id="@+id/search"
         android:title="@string/action_settings"
-        app:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always" />
     <item
         android:id="@+id/call"
