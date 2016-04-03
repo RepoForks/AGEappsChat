@@ -5,7 +5,7 @@ App with of Collapsing Toolbar use.
 - Custom Adapters in RecyclerViews
 - Use of ViewPager
 
-<img src="./screenshots/calls.png"/>
-<img src="./screenshots/chats.png"/>
-<img src="./screenshots/contacts.png"/>
-<img src="./screenshots/collapsed.png"/>
+<img src="./screenshots/calls.jpg"/>
+<img src="./screenshots/chats.jpg"/>
+<img src="./screenshots/contacts.jpg"/>
+<img src="./screenshots/collapsed.jpg"/>
