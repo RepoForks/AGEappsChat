@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title="@string/action_settings"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/ic_perm_phone_msg_white_24dp"
+        android:orderInCategory="100"
+        android:title="Call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/status"
+        android:orderInCategory="100"
+        android:title="Status"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>
