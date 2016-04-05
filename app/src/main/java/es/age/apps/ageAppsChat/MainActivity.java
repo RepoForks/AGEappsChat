@@ -23,27 +23,30 @@ import es.age.apps.ageAppsChat.Fragments.ContactsFragment;
 public class MainActivity extends AppCompatActivity {
 
 
-    private CoordinatorLayout mCoordinator;
-    private CollapsingToolbarLayout mCollapsingToolbarLayout;
+
 
     private ViewPager mPager;
     private MyPagerAdapter mAdapter;
     private TabLayout mTabLayout;
     private Toolbar toolbar;
+    private CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar) findViewById(R.id.app_bar);
-        mCoordinator = (CoordinatorLayout) findViewById(R.id.root_coordinator);
-        mCollapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout);
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_content);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+
+        collapsingToolbar.setTitle(getResources().getString(R.string.app_name));
 
 
-        mTabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        mTabLayout = (TabLayout) findViewById(R.id.tabs);
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
-        mPager = (ViewPager) findViewById(R.id.view_pager);
+        mPager = (ViewPager) findViewById(R.id.viewpager);
         mPager.setAdapter(mAdapter);
         mTabLayout.setTabsFromPagerAdapter(mAdapter);
         mTabLayout.setupWithViewPager(mPager);
